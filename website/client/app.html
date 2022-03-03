@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+    <title>新北房價預測</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="img"></div>
+
+<h2>轉面積(平方公尺)</h2>
+    <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" value="100">
+
+<form class="form">
+	<h2>房</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
+		<label for="radio-bhk-1">1</label>
+		<input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
+		<label for="radio-bhk-2">2</label>
+		<input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
+		<label for="radio-bhk-3">3</label>
+		<input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
+		<label for="radio-bhk-4">4</label>
+		<input type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>
+		<label for="radio-bhk-5">5</label>
+        <input type="radio" id="radio-bhk-6" name="uiBHK" value="6"/>
+		<label for="radio-bhk-6">6</label>
+        <input type="radio" id="radio-bhk-7" name="uiBHK" value="7"/>
+		<label for="radio-bhk-7">7</label>
+	</div>
+</form>
+
+<form class="form">
+	<h2>客廳</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-LR-1" name="uiLR" value="1"/>
+		<label for="radio-LR-1">1</label>
+		<input type="radio" id="radio-LR-2" name="uiLR" value="2" checked/>
+		<label for="radio-LR-2">2</label>
+		<input type="radio" id="radio-LR-3" name="uiLR" value="3"/>
+		<label for="radio-LR-3">3</label>
+		<input type="radio" id="radio-LR-4" name="uiLR" value="4"/>
+		<label for="radio-LR-4">4</label>
+		<input type="radio" id="radio-LR-5" name="uiLR" value="5"/>
+		<label for="radio-LR-5">5</label>
+        <input type="radio" id="radio-LR-6" name="uiLR" value="6"/>
+		<label for="radio-LR-6">6</label>
+        <input type="radio" id="radio-LR-7" name="uiLR" value="7"/>
+		<label for="radio-LR-7">7</label>
+	</div>
+</form>
+
+<form class="form">
+	<h2>浴室</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-bath-1" name="uiBathrooms" value="1"/>
+		<label for="radio-bath-1">1</label>
+		<input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked/>
+		<label for="radio-bath-2">2</label>
+		<input type="radio" id="radio-bath-3" name="uiBathrooms" value="3"/>
+		<label for="radio-bath-3">3</label>
+		<input type="radio" id="radio-bath-4" name="uiBathrooms" value="4"/>
+		<label for="radio-bath-4">4</label>
+		<input type="radio" id="radio-bath-5" name="uiBathrooms" value="5"/>
+		<label for="radio-bath-5">5</label>
+        <input type="radio" id="radio-bath-6" name="uiBathrooms" value="6"/>
+		<label for="radio-bath-6">6</label>
+        <input type="radio" id="radio-bath-7" name="uiBathrooms" value="7"/>
+		<label for="radio-bath-7">7</label>
+	</div>
+</form>
+
+		
+<div>
+	<h2>地區</h2>
+  	<select class="location" name="" id="uiLocations">
+    <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+		<option>Electronic City</option>
+        <option>Rajaji Nagar</option>
+  </select>
+</div>
+
+<div>
+	<h2>房屋類別</h2>
+  	<select class="location" name="" id="uiPropertyType">
+    <option value="" disabled="disabled" selected="selected">Choose a </option>
+		<option>You Dumb</option>
+  </select>
+</div>
+
+<div>
+	<h2>建材</h2>
+  	<select class="location" name="" id="uiMaterials">
+    <option value="" disabled="disabled" selected="selected">Choose a </option>
+		<option>Ex</option>
+  </select>
+</div>
+
+<br>
+
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+
+</body>
+</html>
