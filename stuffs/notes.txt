@@ -1,0 +1,4 @@
+https://www.pluralsight.com/guides/preparing-data-modeling-scikit-learn/
+https://deffro.github.io/data%20processing/normalization-standardization/
+https://deffro.github.io/data%20processing/encoding-categorical-features/
+https://www.listendata.com/2017/04/how-to-standardize-variable-in-regression.html
